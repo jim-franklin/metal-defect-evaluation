@@ -4,13 +4,20 @@ channels:
   - conda-forge
 
 dependencies:
-  - python
-  - pip
+  - python=3.14
   - jupyterlab
+  - jupyter
   - ipykernel
   - pandas
   - numpy
+  - matplotlib
+  - seaborn
   - plotly
   - scikit-learn
-  - pyarrow
-  - pyyaml
+  - xgboost
+  - imbalanced-learn
+  - joblib
+  - quarto
+  - pip
+  - pip:
+      - ucimlrepo
