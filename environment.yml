@@ -1,0 +1,16 @@
+name: metal-defect-eval
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+  - pip
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - numpy
+  - plotly
+  - scikit-learn
+  - pyarrow
+  - pyyaml
