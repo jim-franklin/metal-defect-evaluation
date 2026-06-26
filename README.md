@@ -24,5 +24,16 @@ In pipeline and industrial inspection, raw sensor data goes through a structured
 
 ## Data
 
-UCI Machine Learning Repository — Steel Plates Faults (dataset ID 198)
-Loaded directly via `ucimlrepo` for reproducibility.
+UCI Machine Learning Repository: Steel Plates Faults (dataset ID 198). Loaded directly via `ucimlrepo` for reproducibility.
+
+## Future extensions
+
+The current pipeline covers data assessment, preparation, and feature classification. Three analytical stages were scoped but not implemented in this version:
+
+**Feature sizing**: a regression model to predict defect area from geometric features, demonstrating how classified defects would be dimensioned before reporting.
+
+**Anomaly interaction rules**: proximity-based clustering (DBSCAN) to identify defects sitting close enough together to be assessed as a single combined feature, mirroring the interaction criteria applied in fitness-for-service assessment.
+
+**Non-standard analysis**: novelty detection using Isolation Forest to flag defects that do not match any known fault class and would require manual review before a result is reported.
+
+These stages follow naturally from the classification output and represent the next layer of the ILI evaluation workflow.
